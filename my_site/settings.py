@@ -33,7 +33,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'users'
+    'rest_framework',
+
+    'users',
+    'todo',
 ]
 
 MIDDLEWARE = [
@@ -119,5 +122,7 @@ STATIC_URL = '/static/'
 from .local_setting import *
 
 #User
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.User'
